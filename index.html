@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""></script>
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form action="">
+  <h3>IP Address Tracker</h3>
+  <div class="input">
+    <input type="text" name="" id="inputdata" placeholder="Search for any IP address or domain">
+    <input type="button" value=" " id="btn">
+  </div>
+  <div class="tabele">
+    <p>
+      <span class="title">IP Address</span>
+      <span class="data" id="ip"></span>
+    </p>
+
+    <p>
+      <span class="title">location</span>
+      <span class="data" id="location"></span>
+    </p>
+
+    <p>
+      <span class="title">timezone</span>
+      <span class="data" id="timezone"></span>
+    </p>
+
+    <p>
+      <span class="title">isp</span>
+      <span class="data" id="isp"></span>
+    </p>
+
+  </div>
+</form>
+  
+<!--
+  Search for any IP address or domain
+
+  
+  Location
+  Timezone
+    UTC  add offset value dynamically using the API 
+  ISP-->
+  <div id="mapid"></div>
+ 
+</body>
+</html>
